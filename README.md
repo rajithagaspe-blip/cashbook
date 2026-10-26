@@ -31,7 +31,9 @@ This app does not share one book between several people. If a team needs that, i
 3. Open **Settings > Pages**. Under *Build and deployment*, set Source to **Deploy from a branch**, choose branch `main` and folder `/ (root)`, then Save.
 4. After a minute, your app is live at `https://YOUR-USERNAME.github.io/cashbook/`. Share that link with anyone.
 
-On a phone, open the link and use *Add to Home Screen* so it opens like an app.
+On Android, open the link in Chrome and tap the three dots, then **Install app** (or *Install and create shortcut*). It then opens full screen like a normal app and also opens without internet. On iPhone, use Share, then *Add to Home Screen*.
+
+Upload all of these files to the repository root: `index.html`, `manifest.webmanifest`, `sw.js`, `icon-192.png`, `icon-512.png`, `icon-maskable-512.png`.
 
 ## Notes
 

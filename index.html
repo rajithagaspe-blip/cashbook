@@ -6,6 +6,7 @@
 <title>Cash Book</title>
 <meta name="description" content="A simple cash book for tracking cash in and cash out, with reports. Your data stays in your browser.">
 <meta name="theme-color" content="#3a2bd0">
+<link rel="manifest" href="manifest.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -1177,6 +1178,7 @@ window.addEventListener('storage',function(ev){
   else if(ev.key===B.key){B.reload();render()}
   else if(ev.key===SKEY){S=loadSettings();applySettings();render()}
 });
+if('serviceWorker' in navigator&&/^https?:$/.test(location.protocol)){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){})})}
 })();
 </script>
 </body>
